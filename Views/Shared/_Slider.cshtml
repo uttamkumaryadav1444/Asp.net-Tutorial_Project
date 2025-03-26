@@ -1,0 +1,105 @@
+﻿<style>
+    #event-slider {
+        width: 100vw;
+        height: 100vh;
+        overflow: hidden;
+        position: relative;
+    }
+
+    .carousel-inner {
+        height: 100%;
+    }
+
+    .carousel-item {
+        position: relative;
+        height: 100%;
+    }
+
+    .carousel-item img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        filter: brightness(50%); /* Darker filter for better text contrast */
+    }
+
+    .event-details {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        background: rgba(0, 0, 0, 0.7); /* Semi-transparent overlay */
+        color: white;
+        padding: 3rem;
+        border-radius: 15px;
+        max-width: 700px;
+        text-align: center;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4); /* Subtle shadow */
+    }
+
+    .event-details h5 {
+        font-size: 3rem;
+        font-weight: bold;
+        margin-bottom: 1.5rem;
+        text-transform: uppercase;
+    }
+
+    .event-details p {
+        font-size: 1.4rem;
+        line-height: 1.8;
+        margin-bottom: 1rem;
+    }
+
+    .event-details strong {
+        color: #ffc107; /* Highlighted text */
+    }
+
+    .event-details .icon {
+        font-size: 1.6rem;
+        margin-right: 10px;
+        color: #ffc107;
+    }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+        background-color: rgba(0, 0, 0, 0.7);
+        border-radius: 50%;
+        padding: 10px;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        width: 5%;
+    }
+
+    
+</style>
+
+<div id="event-slider" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner">
+        @for (int i = 0; i < Model.Count; i++)
+        {
+            var eventItem = Model[i];
+            <div class="carousel-item @(i == 0 ? "active" : "")">
+                <img src='@("/" + eventItem.ImagePath.Replace("\\", "/"))' alt="Event Image">
+                <div class="event-details">
+                    <h5>@eventItem.Name</h5>
+                    <p><span class="icon">&#128197;</span><strong>Date:</strong> @eventItem.Date.ToString("yyyy-MM-dd")</p>
+                    <p><span class="icon">&#128205;</span><strong>Location:</strong> @eventItem.Location</p>
+                </div>
+            </div>
+        }
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#event-slider" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#event-slider" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>

@@ -1,0 +1,313 @@
+{
+  "Files": [
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\obj\\Debug\\net8.0\\scopedcss\\projectbundle\\EventManagementWebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\EventManagementWebApp.ng8ve4gvee.bundle.scp.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\css\\site.css",
+      "PackagePath": "staticwebassets\\css\\site.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\favicon.ico",
+      "PackagePath": "staticwebassets\\favicon.ico"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\js\\file-validation.js",
+      "PackagePath": "staticwebassets\\js\\file-validation.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\js\\site.js",
+      "PackagePath": "staticwebassets\\js\\site.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\LICENSE",
+      "PackagePath": "staticwebassets\\lib\\bootstrap"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-reboot.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap-utilities.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.bundle.min.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.esm.min.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map",
+      "PackagePath": "staticwebassets\\lib\\bootstrap\\dist\\js\\bootstrap.min.js.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation-unobtrusive\\jquery.validate.unobtrusive.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation\\LICENSE.md",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\LICENSE.md"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation\\dist\\additional-methods.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\additional-methods.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery-validation\\dist\\jquery.validate.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery-validation\\dist\\jquery.validate.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery\\LICENSE.txt",
+      "PackagePath": "staticwebassets\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery\\dist\\jquery.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.js",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.js"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\lib\\jquery\\dist\\jquery.min.map",
+      "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.min.map"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\03b92a5f-44ac-4305-b0f0-a455379d2516.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\03b92a5f-44ac-4305-b0f0-a455379d2516.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\31d96cc8-8c08-4d15-a23e-3bfd0fc43db1.png",
+      "PackagePath": "staticwebassets\\uploads\\events\\31d96cc8-8c08-4d15-a23e-3bfd0fc43db1.png"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\3289fa76-22a4-4ccd-8280-c2d7bd67f498.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\3289fa76-22a4-4ccd-8280-c2d7bd67f498.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\3e1bd731-5dde-4738-85f0-a6770045fb85.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\3e1bd731-5dde-4738-85f0-a6770045fb85.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\82df58d5-a550-4e46-bbec-63fe3af0119a.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\82df58d5-a550-4e46-bbec-63fe3af0119a.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\90420bed-01fe-4c09-b906-2d1a3dc76ff3.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\90420bed-01fe-4c09-b906-2d1a3dc76ff3.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\940134a4-8bcf-43a3-862e-eb32281322c6.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\940134a4-8bcf-43a3-862e-eb32281322c6.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\a3e3b769-11f6-4dde-94cf-196383d2365b.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\a3e3b769-11f6-4dde-94cf-196383d2365b.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\ebaebc36-c293-4889-8c3e-392587247791.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\ebaebc36-c293-4889-8c3e-392587247791.jpg"
+    },
+    {
+      "Id": "E:\\Seemester_6\\Poject ASp Final\\EventManagementsSystemMVC\\wwwroot\\uploads\\events\\f139ff4a-06d9-4641-b710-f4afcc043aa2.jpg",
+      "PackagePath": "staticwebassets\\uploads\\events\\f139ff4a-06d9-4641-b710-f4afcc043aa2.jpg"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EventManagementWebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.EventManagementWebApp.Microsoft.AspNetCore.StaticWebAssets.props",
+      "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.build.EventManagementWebApp.props",
+      "PackagePath": "build\\EventManagementWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildMultiTargeting.EventManagementWebApp.props",
+      "PackagePath": "buildMultiTargeting\\EventManagementWebApp.props"
+    },
+    {
+      "Id": "obj\\Debug\\net8.0\\staticwebassets\\msbuild.buildTransitive.EventManagementWebApp.props",
+      "PackagePath": "buildTransitive\\EventManagementWebApp.props"
+    }
+  ],
+  "ElementsToRemove": []
+}

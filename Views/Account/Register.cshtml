@@ -1,0 +1,169 @@
+﻿@model EventManagementWebApp.ViewModels.RegisterViewModel
+
+@{
+    ViewData["Title"] = "Register";
+}
+
+<style>
+
+    .register-container {
+        height: 100vh;
+        background-color: #fff;
+        border-radius: 15px;
+        padding: 2rem;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        width: 100%;
+        max-width: 400px;
+        text-align: left;
+        background-color: #f5f5f5;
+        margin: auto;
+        height: auto;
+    }
+
+    .register-header {
+        margin-bottom: 2rem;
+    }
+
+    .register-header h2 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+
+    .register-header p {
+        color: #777;
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 1.5rem;
+    }
+
+    .form-group input {
+        width: 100%;
+        padding: 0.75rem;
+        padding-left: 2.5rem; /* Room for the icon */
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+    .form-group label {
+        display: none;
+    }
+
+    .form-group .icon {
+        position: absolute;
+        top: 50%;
+        left: 10px;
+        transform: translateY(-50%);
+        font-size: 1.2rem;
+        color: #777;
+    }
+
+    .btn-primary {
+        background-color: #6a11cb;
+        border: none;
+        width: 100%;
+        padding: 0.75rem;
+        font-size: 1.1rem;
+        font-weight: bold;
+        border-radius: 5px;
+        color: #fff;
+        transition: background-color 0.3s ease;
+    }
+
+    .btn-primary:hover {
+        background-color: #2575fc;
+    }
+
+    .alert-danger {
+        margin-bottom: 1rem;
+        color: #721c24;
+        background-color: #f8d7da;
+        border: 1px solid #f5c6cb;
+        padding: 0.75rem 1.25rem;
+        border-radius: 0.25rem;
+    }
+
+    .login-link {
+        margin-top: 1.5rem;
+        display: block;
+        text-decoration: none;
+        color: #6a11cb;
+        font-size: 0.9rem;
+    }
+
+    .login-link:hover {
+        color: #2575fc;
+    }
+</style>
+
+<div class="register-container">
+    <div class="register-header">
+        <h2>Create an Account</h2>
+        <p>Please fill out the form below to register</p>
+    </div>
+
+    @if (!ViewData.ModelState.IsValid)
+    {
+        <div class="alert alert-danger">
+            <strong>There was an error with your registration attempt:</strong>
+            <ul>
+                @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                {
+                    <li>@error.ErrorMessage</li>
+                }
+            </ul>
+        </div>
+    }
+
+    <form asp-action="Register" method="post">
+        <div class="form-group">
+            <span class="icon">
+                <i class="fa fa-user"></i>
+            </span>
+            <input asp-for="FirstName" placeholder="First Name" class="form-control" />
+            <span asp-validation-for="FirstName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <span class="icon">
+                <i class="fa fa-user"></i>
+            </span>
+            <input asp-for="LastName" placeholder="Last Name" class="form-control" />
+            <span asp-validation-for="LastName" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <span class="icon">
+                <i class="fa fa-envelope"></i>
+            </span>
+            <input asp-for="Email" placeholder="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <span class="icon">
+                <i class="fa fa-lock"></i>
+            </span>
+            <input asp-for="Password" type="password" placeholder="Password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+
+        <div class="form-group">
+            <span class="icon">
+                <i class="fa fa-lock"></i>
+            </span>
+            <input asp-for="ConfirmPassword" type="password" placeholder="Confirm Password" class="form-control" />
+            <span asp-validation-for="ConfirmPassword" class="text-danger"></span>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Register</button>
+    </form>
+
+    <a href="@Url.Action("Login", "Account")" class="login-link">Already have an account? Login</a>
+</div>
+
+@{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}

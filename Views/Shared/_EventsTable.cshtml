@@ -1,0 +1,225 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using EventManagementWebApp.Models
+@inject UserManager<User> UserManager
+@{
+    var isOrganizer = User.IsInRole("Organizer");
+}
+<style>
+    /* Filter Form Styling */
+    .filter-form {
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+    .pagination {
+        display: flex;
+        justify-content: center
+    }
+
+        .filter-form input {
+            border-radius: 6px;
+        }
+
+        .filter-form .input-group {
+            display: flex;
+            align-items: center;
+        }
+
+        .filter-form .input-group-text {
+            background-color: #6c757d;
+            color: white;
+            border: none;
+            border-radius: 6px 0 0 6px;
+        }
+
+        .filter-form button {
+            width: 100%;
+            background: linear-gradient(90deg, #6a11cb, #2575fc);
+            color: white;
+            border: none;
+            border-radius: 6px;
+            transition: background 0.3s ease;
+        }
+
+            .filter-form button:hover {
+                background: linear-gradient(90deg, #2575fc, #6a11cb);
+            }
+
+    /* Table Styling */
+    .table-container {
+        margin-top: 1rem;
+        background-color: white;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        overflow: hidden;
+    }
+
+    table {
+        margin: 0;
+        border-collapse: separate;
+        border-spacing: 0;
+        width: 100%;
+    }
+
+    thead {
+        background-color: #4e54c8;
+        color: white;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+    }
+
+    th {
+        padding: 1rem;
+        text-align: left;
+    }
+
+    tbody tr:hover {
+        background-color: #f1f3f5;
+        cursor: pointer;
+    }
+
+    tbody td {
+        padding: 1rem;
+        border-bottom: 1px solid #dee2e6;
+    }
+
+    .btn-sm {
+        font-size: 0.8rem;
+        padding: 0.3rem 0.6rem;
+    }
+</style>
+
+<!-- Filter Form -->
+<form method="get" class="filter-form mb-4">
+    <div class="row g-3">
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                <input type="text" name="name" class="form-control" placeholder="Filter by Name" value="@Context.Request.Query["name"]" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-map-marker-alt"></i></span>
+                <input type="text" name="location" class="form-control" placeholder="Filter by Location" value="@Context.Request.Query["location"]" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="input-group">
+                <span class="input-group-text"><i class="fas fa-calendar-alt"></i></span>
+                <input type="date" name="date" class="form-control" value="@Context.Request.Query["date"]" />
+            </div>
+        </div>
+        <div class="col-md-3">
+            <button type="submit" class="btn btn-primary"><i class="fas fa-filter"></i> Apply Filters</button>
+        </div>
+    </div>
+</form>
+
+<!-- Events Table -->
+<div class="table-container">
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>#</th>
+                <th>Name</th>
+                <th>Date</th>
+                <th>Location</th>
+                @if (isOrganizer)
+                {
+                    <th>Actions</th>
+                }
+                else
+                {
+                    <th>Actions</th>
+                }
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var eventItem in Model.EventsTable)
+            {
+                <tr>
+                    <td>@eventItem.Id</td>
+                    <td>@eventItem.Name</td>
+                    <td>
+                        <span class="badge bg-primary">@eventItem.Date.ToString("yyyy-MM-dd")</span>
+                    </td>
+                    <td>@eventItem.Location</td>
+                    <td>
+                        <!-- View Details Button -->
+                        <a href="@Url.Action("Details", "Event", new { id = eventItem.Id })" class="btn btn-info btn-sm" title="View Details">
+                            <i class="fas fa-eye"></i> View
+                        </a>
+
+                        @if (isOrganizer && eventItem.OrganizerId == int.Parse(UserManager.GetUserId(User)))
+                        {
+                            <!-- Show Registration Count for Organizer's Event -->
+                            <div>
+                                <strong>Registrations: </strong>
+                                @eventItem.Registrations.Count
+                            </div>
+
+                            <!-- Delete Event Button -->
+                            <form method="post" action="@Url.Action("Delete", "Event", new { id = eventItem.Id })" onsubmit="return confirm('Are you sure you want to delete this event?');" style="display:inline;">
+                                @Html.AntiForgeryToken()
+                                <button type="submit" class="btn btn-danger btn-sm" title="Delete Event">
+                                    <i class="fas fa-trash-alt"></i> Delete
+                                </button>
+                            </form>
+                        }
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Pagination Controls -->
+    @if (Model.TotalEvents > 0)
+    {
+        <nav>
+            <ul class="pagination">
+                <!-- Previous Page -->
+                @if (Model.CurrentPage > 1)
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.CurrentPage - 1, pageSize = Model.PageSize, name = Context.Request.Query["name"], location = Context.Request.Query["location"], date = Context.Request.Query["date"] })">Previous</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <a class="page-link">Previous</a>
+                    </li>
+                }
+
+                <!-- Page Numbers -->
+                @for (int i = 1; i <= Math.Ceiling((double)Model.TotalEvents / Model.PageSize); i++)
+                {
+                    <li class="page-item @(i == Model.CurrentPage ? "active" : "")">
+                        <a class="page-link" href="@Url.Action("Index", new { pageNumber = i, pageSize = Model.PageSize, name = Context.Request.Query["name"], location = Context.Request.Query["location"], date = Context.Request.Query["date"] })">
+                            @i
+                        </a>
+                    </li>
+                }
+
+                <!-- Next Page -->
+                @if (Model.CurrentPage < Math.Ceiling((double)Model.TotalEvents / Model.PageSize))
+                {
+                    <li class="page-item">
+                        <a class="page-link" href="@Url.Action("Index", new { pageNumber = Model.CurrentPage + 1, pageSize = Model.PageSize, name = Context.Request.Query["name"], location = Context.Request.Query["location"], date = Context.Request.Query["date"] })">Next</a>
+                    </li>
+                }
+                else
+                {
+                    <li class="page-item disabled">
+                        <a class="page-link">Next</a>
+                    </li>
+                }
+            </ul>
+        </nav>
+    }
+
+</div>
+

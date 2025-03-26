@@ -1,0 +1,70 @@
+﻿@model EventManagementWebApp.ViewModels.IndexViewModel
+
+@{
+    var isMember = User.IsInRole("Member");
+    var isOrganizer = User.IsInRole("Organizer");
+    var isAdmin = User.IsInRole("Admin");
+}
+
+@if (isMember || (!isAdmin && !isOrganizer))
+{
+    <partial name="_Slider" model="Model.SliderEvents" />
+}
+
+<main class="container mt-4" style="margin: 120px auto; margin-top: 120px !important;">
+    <partial name="_EventsTable" model="Model" />
+</main>
+
+@if (isMember || (!isAdmin && !isOrganizer))
+{
+    <div class="bg-light">
+        <section class="container mt-5">
+            <h2 class="text-center mb-4">Why Join Our Community?</h2>
+            <div class="row">
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                    <h5>Engage with Others</h5>
+                    <p>Connect with like-minded individuals and expand your network at every event.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-calendar-check fa-3x mb-3 text-success"></i>
+                    <h5>Exclusive Events</h5>
+                    <p>Access exclusive members-only events tailored to your interests.</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <i class="fas fa-award fa-3x mb-3 text-warning"></i>
+                    <h5>Grow Your Skills</h5>
+                    <p>Participate in workshops and seminars to grow both personally and professionally.</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <section class="py-5 mt-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimonials</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"This platform has completely changed the way I approach events. Highly recommended!"</p>
+                        <footer class="blockquote-footer mt-3">Uttam , <cite title="Source Title">Member</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"Organizing events has never been easier. Great tools and excellent support!"</p>
+                        <footer class="blockquote-footer mt-3">Uttam Kumar yadav, <cite title="Source Title">Organizer</cite></footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-4">
+                    <blockquote class="blockquote">
+                        <p class="mb-0">"The events hosted here are always top-notch and well-organized."</p>
+                        <footer class="blockquote-footer mt-3">vikash, <cite title="Source Title">Member</cite></footer>
+                    </blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+}
